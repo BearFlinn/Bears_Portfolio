@@ -1,0 +1,9 @@
+h1 {
+  text-align: center;
+}
+
+.description {
+  text-rendering: bold;
+  font-size: 20px;
+  margin: 0% 20% 0% 20%;
+}
