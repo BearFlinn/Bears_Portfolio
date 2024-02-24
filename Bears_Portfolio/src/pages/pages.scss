@@ -1,9 +1,19 @@
-h1 {
-    text-align: center;
+.home {
+    display: block;
+    margin: 0% 10% 0% 10%;
+
+    h1 {
+        text-align: center;
+    }
+    
+    .description {
+        text-rendering: bold;
+        font-size: 20px;
+    }
 }
 
-.description {
-    text-rendering: bold;
-    font-size: 20px;
-    margin: 0% 20% 0% 20%;
+.playground {
+    display: block;
+    margin: 0% 10% 0% 10%;
+    align-items: center;
 }

@@ -14,6 +14,8 @@ enum Page {
     Portfolio,
     #[at("/resume")]
     Resume,
+    #[at("/playground")]
+    Playground,
     #[at("/404")]
     NotFound,
 }
@@ -26,6 +28,7 @@ fn app() -> Html {
         <main class="pages">
         <BrowserRouter>
                 <Switch<Page> render={switch} />
+                <Footer />
         </BrowserRouter>
         </main>
     </div>
@@ -37,6 +40,7 @@ fn switch(page: Page) -> Html {
         Page::Home => html! { <Home /> },
         Page::Portfolio => html! { <Portfolio /> },
         Page::Resume => html! { <Resume /> },
+        Page::Playground => html! { <Playground /> },
         _ => html! { 
             <div> { "404" } </div>},
     }

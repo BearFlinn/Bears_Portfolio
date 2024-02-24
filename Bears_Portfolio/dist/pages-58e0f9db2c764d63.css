@@ -1,0 +1,17 @@
+.home {
+  display: block;
+  margin: 0% 10% 0% 10%;
+}
+.home h1 {
+  text-align: center;
+}
+.home .description {
+  text-rendering: bold;
+  font-size: 20px;
+}
+
+.playground {
+  display: block;
+  margin: 0% 10% 0% 10%;
+  align-items: center;
+}
