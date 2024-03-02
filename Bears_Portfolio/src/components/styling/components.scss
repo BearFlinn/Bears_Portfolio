@@ -72,3 +72,42 @@
         }
     }
 }
+
+.square-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s ease-in-out;
+
+    .square-active {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        transition: 0.25s ease-in-out;
+        opacity: 1;
+    }
+
+    .square-inactive {
+        width: 100px;
+        height: 100px;
+        transition: 0.25s ease-in-out;
+        position: relative;
+        opacity: 0;
+    }
+
+    .square-entering {
+        width: 100px;
+        height: 100px;
+        transition: 0.25s ease-out;
+        position: relative;
+        opacity: 0.5;
+    }
+
+    .square-exiting {
+        width: 100px;
+        height: 100px;
+        transition: 0.25s ease-in;
+        position: relative;
+        opacity: 0.5;
+    }
+}

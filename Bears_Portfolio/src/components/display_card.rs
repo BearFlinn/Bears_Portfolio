@@ -49,8 +49,8 @@ pub struct CardLayoutProps {
 #[derive(Clone, PartialEq)]
 pub enum LayoutType {
     Grid(usize),
-    Row,
-    Column,
+    //Row,
+    //Column,
 }
 
 /// Renders the card layout based on the provided props
@@ -58,8 +58,8 @@ pub enum LayoutType {
 pub fn card_layout(props: &CardLayoutProps) -> Html {
     let layout_class = match props.layout {
         LayoutType::Grid(columns) => format!("grid-cols-{}", columns),
-        LayoutType::Row => "flex-row".to_string(),
-        LayoutType::Column => "flex-col".to_string(),
+        // LayoutType::Row => "flex-row".to_string(),
+        // LayoutType::Column => "flex-col".to_string(),
     };
 
     html! {

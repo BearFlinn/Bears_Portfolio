@@ -1,0 +1,9 @@
+# Rust/Git related
+dist/
+target/
+Cargo/
+.vscode/
+rustc_info.json
+
+# Code I've written to reference later
+RefCode/
